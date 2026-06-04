@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq (1000 4 24 27 30 46 1000TARGET_DEVICE),wisdom)
+ifeq ($(TARGET_DEVICE),wisdom)
 
 include $(LOCAL_PATH)/Android-omc.mk
 
