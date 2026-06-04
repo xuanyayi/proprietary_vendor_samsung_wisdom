@@ -4,11 +4,11 @@ Proprietary vendor blobs for Samsung Galaxy Tab A 8.0 with S Pen (SM-P205, coden
 
 Local checkout path:
 
-`vendor/samsung/p205`
+`vendor/samsung/wisdom`
 
 This repository is consumed by:
 
-- `device/samsung/p205`
+- `device/samsung/wisdom`
 
 Branch convention:
 
