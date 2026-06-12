@@ -6,7 +6,62 @@
     <CountryISO>PH</CountryISO>
     <Region>SEA</Region>
     <SalesCode>XTC</SalesCode>
-    <NbNetworkInfo>11</NbNetworkInfo>
+    <NbNetworkInfo>22</NbNetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46000</MCCMNC>
+      <NetworkName>China Mobile</NetworkName>
+      <NWID>NW046000</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46002</MCCMNC>
+      <NetworkName>China Mobile</NetworkName>
+      <NWID>NW046002</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46007</MCCMNC>
+      <NetworkName>China Mobile</NetworkName>
+      <NWID>NW046007</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46008</MCCMNC>
+      <NetworkName>China Mobile</NetworkName>
+      <NWID>NW046008</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46001</MCCMNC>
+      <NetworkName>China Unicom</NetworkName>
+      <NWID>NW046001</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46006</MCCMNC>
+      <NetworkName>China Unicom</NetworkName>
+      <NWID>NW046006</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46009</MCCMNC>
+      <NetworkName>China Unicom</NetworkName>
+      <NWID>NW046009</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46003</MCCMNC>
+      <NetworkName>China Telecom</NetworkName>
+      <NWID>NW046003</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46005</MCCMNC>
+      <NetworkName>China Telecom</NetworkName>
+      <NWID>NW046005</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46011</MCCMNC>
+      <NetworkName>China Telecom</NetworkName>
+      <NWID>NW046011</NWID>
+    </NetworkInfo>
+    <NetworkInfo>
+      <MCCMNC>46015</MCCMNC>
+      <NetworkName>China Broadnet</NetworkName>
+      <NWID>NW046015</NWID>
+    </NetworkInfo>
     <NetworkInfo>
       <MCCMNC>51502</MCCMNC>
       <NetworkName>Globe Postpaid</NetworkName>
