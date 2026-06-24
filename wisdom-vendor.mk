@@ -33,9 +33,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/wisdom/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000045.drbin \
     vendor/samsung/wisdom/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000062.tlbin \
     vendor/samsung/wisdom/proprietary/vendor/etc/init/mobicore.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mobicore.rc \
-    vendor/samsung/wisdom/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
     vendor/samsung/wisdom/proprietary/vendor/etc/init/vendor.trustonic.tee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.0-service.rc \
-    vendor/samsung/wisdom/proprietary/vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.teeregistry@1.0-service.rc \
+    vendor/samsung/wisdom/proprietary/vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
+
+ifeq ($(TARGET_ENABLE_CAMERA_BRINGUP),true)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/wisdom/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
     vendor/samsung/wisdom/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     vendor/samsung/wisdom/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
     vendor/samsung/wisdom/proprietary/vendor/firmware/fimc_is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_rta.bin \
@@ -67,7 +70,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider@4.0.p205 \
     libgiantmscl \
     liboemcrypto \
-    gatekeeper.exynos7904 \
     sensors.universal7904 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.teeregistry@1.0 \
@@ -75,3 +77,14 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0-service \
     vendor.trustonic.teeregistry@1.0-service \
     mcDriverDaemon
+else
+PRODUCT_PACKAGES += \
+    libMcClient \
+    liboemcrypto \
+    sensors.universal7904 \
+    vendor.trustonic.tee@1.0 \
+    vendor.trustonic.teeregistry@1.0 \
+    vendor.trustonic.tee@1.0-service \
+    vendor.trustonic.teeregistry@1.0-service \
+    mcDriverDaemon
+endif
