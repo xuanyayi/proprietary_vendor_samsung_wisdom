@@ -21,4 +21,5 @@ service mobicore /vendor/bin/mcDriverDaemon -r /vendor/app/mcRegistry/FFFFFFFF00
     class core
     user system
     group system
+    shutdown critical
     disabled
